@@ -1,0 +1,86 @@
+<DOCTYPE! HTML>
+<meta charset="UTF-8">
+<HEAD>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</HEAD>
+<BODY>
+<h1 style="text-align:center;">Change Schedule [Demo]</h1>
+<span>Start Date: </span><DIV style="display:inline;" ID = "StartDateForCalendar"></DIV>
+<span>| End Date: </span><DIV style="display:inline;" ID = "EndDateForCalendar"></DIV>
+<br>
+<span>Current Time: </span><div style="display:inline;" id="currentTime"></div>
+<script>
+$("#currentTime").html(new Date().toString().substring(4,33));
+setInterval(function(){ $("#currentTime").html(new Date().toString().substring(4,33)); }, 500);</script>
+<br><br>
+
+<div id="checkbox-container">
+    <div>
+    <input type="checkbox" id="LatentToggle">
+    <label for="LatentToggle">Latent (L)</label>
+	</div>
+    <div>
+    <input type="checkbox" id="StandardToggle">
+    <label for="StandardToggle">Standard (S)</label>
+	</div>
+    <div>
+    <input type="checkbox" id="NormalToggle">
+    <label for="NormalToggle">Normal (N)</label>
+	</div>
+    <div>
+    <input type="checkbox" id="EmergencyToggle">
+    <label for="EmergencyToggle">Emergency (E)</label>
+    </div>
+    <div>
+    <input type="checkbox" id="UnscheduledToggle">
+    <label for="UnscheduledToggle">Unscheduled (U)</label>
+	</div>
+    <div>
+    <input type="checkbox" id="TestToggle">
+    <label for="TestToggle">Test (T)</label>
+	</div>
+</div>
+
+<div id="checkbox-container-status">
+	<div>
+    <input type="checkbox" id="AwaitingAdditionalInformationToggle">
+    <label for="AwaitingAdditionalInformationToggle">Awaiting Info</label>
+	</div>
+	<div>
+    <input type="checkbox" id="OnHoldToggle">
+    <label for="OnHoldToggle">On Hold</label>
+	</div>
+    <div>
+    <input type="checkbox" id="ClosedToggle">
+    <label for="ClosedToggle">Closed</label>
+	</div>
+    <div>
+    <input type="checkbox" id="InProgressToggle">
+    <label for="InProgressToggle">In Progress</label>
+	</div>
+    <div>
+    <input type="checkbox" id="UnderReviewToggle">
+    <label for="UnderReviewToggle">Under Review</label>
+    </div>
+    <div>
+    <input type="checkbox" id="PendingValidationToggle">
+    <label for="PendingValidationToggle">Pending Validation</label>
+	</div>
+</div>
+
+<div id="checkbox-container-service">
+
+</div>
+
+<button id="shareSelectedChanges">Share Selected Changes via Email</button>
+<table id="changeCalendar">
+    <tbody id="calendarStart"></tbody>
+</table>
+<br>
+<br>
+<br>
+</BODY>
+</HTML>

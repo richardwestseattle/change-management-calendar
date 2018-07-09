@@ -1,0 +1,163 @@
+/*many of these classes are not currently being used, however they are available.
+*/
+button#shareSelectedChanges{
+text-align: center;
+width:250px;
+margin-left: 65%;
+margin-right: auto;
+margin-top:20px;
+height:auto;
+font-size: x-large;
+
+}
+
+.PendingValidation{
+
+}
+.InProgress{
+
+}
+.fullDetailsonCalendar{
+font-weight:normal;
+}
+.OnHold{
+text-decoration: line-through;
+}
+.pOrR{
+color:red;
+font-weight: bold;
+}
+.highlightToday p.CalendarDate{
+	background: yellow;
+}
+th{
+	font-weight:bolder;
+	text-align: center !important;
+	font-size:x-large !important;
+	margin-bottom: 25px !important;
+	padding-bottom: 25px !important;
+	width:14.1414% !important;
+	border-bottom: 1px solid black;
+}
+td{
+	width:14.1414% !important;
+}
+.dayOfWeekCell {
+    border: 3px solid #808080;
+    vertical-align: top;
+    font-size: medium;
+		text-align:left;
+    }
+#day1, .secondWeek{
+		border-top-left-radius: 10px;
+	}
+
+	table#changeCalendar tr:nth-child(2) td:last-child{
+		border-top-right-radius: 10px;
+
+	}
+	table#changeCalendar tr:last-child td:first-child{
+		border-bottom-left-radius: 10px;
+	}
+	table#changeCalendar tr:last-child td:last-child{
+		border-bottom-right-radius: 10px;
+	}
+table#changeCalendar {
+		border-collapse: separate;
+    width: 90%;
+		margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow:auto
+		}
+
+.ChangeEntry {
+    background-color: white;
+		font-family: Times;
+		padding-bottom: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border-bottom: #D3D3D3;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+    }
+
+.NormalChange, label[for='NormalToggle']{
+		color: #9D3378;
+    font-weight:bold;
+	}
+.StandardChange, label[for='StandardToggle']{
+  color: #CF0FF0;
+  font-weight:bold;
+	}
+	.EmergencyChange, label[for='EmergencyToggle']{
+		color:#5B348A;
+    font-weight:bold;
+	}
+	.LatentChange, label[for='LatentToggle']{
+		color: #0AC03E;
+    font-weight:bold;
+	}
+	.UnscheduledChange, label[for='UnscheduledToggle']{
+		color: #E25BB3;
+    font-weight:bold;
+	}
+.TestChange, label[for='TestToggle']{
+		color: #000000;
+    font-weight:bold;
+	}
+.seeMoreComments{
+
+	 }
+.dayOfWeekCell .CalendarDate {
+    text-align: right;
+    background-color: #D3D3D3;
+		padding-right: 5px;
+		font-weight:bolder;
+		margin-top:0px;
+    }
+.dayOfWeekCell{
+		overflow:auto;
+		height: 250px;
+	}
+
+#checkbox-container-service div, label, input{
+		display:inline;
+	}
+
+#checkbox-container-status div, label, input{
+		display:inline;
+	}
+
+#checkbox-container-status, #checkbox-container-service{
+		margin-top:5px;
+	}
+#checkbox-container, #checkbox-container-status, #checkbox-container-service{
+		height:45px;
+		width:80%;
+		margin-left:auto;
+		margin-right:auto;
+		border: 2px solid #808080;
+		border-radius: 10px;
+		overflow: auto;
+		text-align: center;
+	}
+#checkbox-container label, #checkbox-container-status label, #checkbox-container-service label{
+		margin-left:auto;
+		margin-right:auto;
+		padding-top: 5px;
+		margin-left: margin-left:5em;
+	}
+#checkbox-container input, #checkbox-container-status input, #checkbox-container-service input{
+		margin-left:auto;
+		margin-right:auto;
+		padding-top: 5px;
+		margin-left:3em;
+	}
+div[id^='checkbox'] div, label, input{
+		display:inline;
+		font-weight: bold;
+	}
+#checkbox-container div, #checkbox-container-status div, #checkbox-container-service div{
+		vertical-align: middle;
+	}
