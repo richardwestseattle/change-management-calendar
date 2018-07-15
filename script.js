@@ -406,7 +406,7 @@ function renderCalendar(calendarElements)
 			visibilityEvaluator();
 		});
 
-/*We could bind this anywhere as long as it it bound before users attempt to share items via email. Basically, when they check a box on a calendar item, and then press the email button, the contents of that item are retreived from the calendarElements array and sent to their defaault email client.*/
+/*This could be bound elsewhere, so long as it it bound before users attempt to share items via email. Basically, when they check a box on a calendar item, and then press the email button, the contents of that item are retreived from the calendarElements array and sent to their defaault email client.*/
 			$("#shareSelectedChanges").on("click", function(){
 
 					var emailContents ="";
@@ -432,7 +432,8 @@ function renderCalendar(calendarElements)
 
 				var email = '';
 				var subject = 'Change Requests';
-				//Outlook limits this to something like 2048 characters.
+				//Outlook limits this to something like 2048 characters. So, this is based on Outlook because it is one of the most
+				//popular desktop email clients.
 				var numOfAllowedChars = 2000;
 				var emailContentType = "text/html";
 				emailFullLink = encodeURI("mailto:" + email+ "?Content-type=" +emailContentType+ '?subject=' + subject + '&body=' +   emailContents);
