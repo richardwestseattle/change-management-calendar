@@ -1,4 +1,4 @@
-jQuery/JavaScript Change Management Calendar | Richard West | rick.p.west@gmail.com
+jQuery/JavaScript Change Management Calendar | Richard West | https://www.linkedin.com/in/richardwestseattle/
 
 This JavaScript/jQuery calendar was built to display IT change requests in a helpful format, to help with change management processes and planning. The idea is that a technician, and/or change manager, can view: what changes have occurred in the past few days; what changes are planned; and what change requests are queued up for review.
 
